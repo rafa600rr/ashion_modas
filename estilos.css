@@ -1,0 +1,265 @@
+/* FONTES DA PAGINA */
+@font-face{
+    font-family: principal;
+    src: url(fonts/Enigma.ttf)
+}
+
+@font-face{
+    font-family: secundaria;
+    src: url(fonts/Dancingdog.ttf)
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    outline: none;
+}
+
+header{
+    overflow: hidden;
+    box-shadow: 0px 1px 5px grey;
+}
+
+#categorias{
+    overflow: hidden;
+}
+
+#logo img{
+    margin-left: 15px;
+}
+
+#logo{
+    float: left;
+    width: 15%;
+    padding-top: 20px;
+}
+
+#pesquisa{
+    float: left;
+    width: 70%;
+    padding-top: 30px;
+    text-align: center;
+}
+
+#carrinho{
+    float: left;
+    width: 15%;
+    padding-top: 10px;
+    text-align: right;
+}
+
+#carrinho img{
+    width: 60px;
+    margin-right: 15px;
+}
+
+#pesquisa input[type="search"]{
+    background-color: rgba(351,13,99, 0.2);
+    width: 400px;
+    padding: 10px;
+    border: 1px solid rgb(0,0,0);
+    border-right-width: 0px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+#pesquisa input[type="button"]{
+    background-color: rgba(351,13,99, 0.5);
+    padding: 10px;
+    border: 1px solid rgb(0,0,0);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+#pesquisa input[type="button"]:hover{
+    background-color: rgba(351,13,99, 0.8);
+}
+
+/* CORPO PRINCIPAL - MAIEN */
+main{
+    margin: 20px auto;
+    width: 1000px;
+    overflow: hidden;
+}
+
+/* CATEGORIAS */
+#CategoriaPrimaria{
+    background-image: url(imagens/categorias/1.jpg);
+    background-size: cover;
+    float: left;
+    width: 500px;
+    height: 350px;
+    transition: opacity 0.3s;
+}
+
+#CategoriaPrimaria:hover{
+    opacity: 0.8;
+}
+
+#CategoriaPrimaria h1{
+    font-family: principal;
+    font-size: 50px;
+    margin-top: 130px;
+    margin-left: 40px;
+}
+
+#CategoriaSecundaria h1{
+    font-family: principal;
+    font-size: 20px;
+    margin-top: 65px;
+    margin-left: 10px;
+}
+
+#categoria_masculino{
+    float: left;
+    background-image: url(imagens/categorias/2.jpg);
+    background-size: cover;
+    width: 250px;
+    height: 175px;
+    transition: opacity 0.3s;
+}
+
+#categoria_masculino:hover{
+    opacity: 0.8;
+}
+
+#categoria_infantil{
+    float: left;
+    background-image: url(imagens/categorias/3.jpg);
+    background-size: cover;
+    width: 250px;
+    height: 175px;
+    transition: opacity 0.3s;
+}
+
+#categoria_infantil:hover{
+    opacity: 0.8;
+}
+
+#categoria_cosmeticos{
+    float: left;
+    background-image: url(imagens/categorias/4.jpg);
+    background-size: cover;
+    width: 250px;
+    height: 175px;
+    transition: opacity 0.3s;
+}
+
+#categoria_cosmeticos:hover{
+    opacity: 0.8;
+}
+
+
+#categoria_acessorios{
+    float: left;
+    background-image: url(imagens/categorias/5.jpg);
+    background-size: cover;
+    width: 250px;
+    height: 175px;
+    opacity: 2s;
+    transition: opacity 0.3s;
+}
+
+#categoria_acessorios:hover{
+    opacity: 0.8;
+}
+
+/* PRODUTOS */
+
+#produtos h1{
+    font-size: 40px;
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+}
+
+#produtos ul{
+    text-align: center;
+    list-style: none;
+}
+
+#produtos li{
+    width: 270px;
+    display: inline-block;
+}
+
+#prod1{
+    background-image: url(imagens/produtos/1.jpg);
+    width: 270px;
+    height: 360px;
+}
+
+#prod2{
+    background-image: url(imagens/produtos/2.jpg);
+    width: 270px;
+    height: 360px;
+}
+
+#prod3{
+    background-image: url(imagens/produtos/3.jpg);
+    width: 270px;
+    height: 360px;
+}
+
+#prod4{
+    background-image: url(imagens/produtos/4.jpg);
+    width: 270px;
+    height: 360px;
+}
+
+#prod5{
+    background-image: url(imagens/produtos/5.jpg);
+    width: 270px;
+    height: 360px;
+}
+
+#prod6{
+    background-image: url(imagens/produtos/6.jpg);
+    width: 270px;
+    height: 360px;
+}
+
+#prod7{
+    background-image: url(imagens/produtos/7.jpg);
+    width: 270px;
+    height: 360px;
+}
+
+#prod8{
+    background-image: url(imagens/produtos/8.jpg);
+    width: 270px;
+    height: 360px;
+}
+
+#prodi{
+    width: 270px;
+    height: 360px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+#prodi:hover{
+    opacity: 1;
+}
+
+#produtos #titulo{
+    background-color: rgba(255, 255, 255, 0.39);
+    width: 270px;
+    text-align: center;
+    text-transform: capitalize;
+    position: absolute;
+    margin-top: 304px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bolder;
+}
+
+li img{
+    width: 30px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(211, 211, 211);
+    padding-left: 120px;
+    padding-right: 117px;
+}
