@@ -2,7 +2,7 @@
 let express = require('express');
 
 // Importar handlebars
-let handlebars = require('handlebars');
+let handlebars = require('express-handlebars');
 
 // Exportar APP
 let app = express();
