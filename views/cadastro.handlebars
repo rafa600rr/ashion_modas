@@ -1,33 +1,33 @@
 <div class="formCadastro">
     <h1>Faça parte da nossa loja!</h1>
 
-    <form action="">
+    <form action="/cadastro" method="POST">
        <div id="formImg">
            <img src="imagens/register.png">
        </div>
 
     <div id="formInput">
-        <input type="text" placeholder="Nome" id="nome">
-        <input type="text" placeholder="Sobrenome" id="sobreNome">
-        <input type="text" placeholder="Telefone" id="tel">
-        <input type="text" placeholder="CPF" id="cpf">
-        <input type="date" id="data">
+        <input type="text" name="nome" placeholder="Nome" id="nome">
+        <input type="text" name="sobreNome" placeholder="Sobrenome" id="sobreNome">
+        <input type="text" name="tel" placeholder="Telefone" id="tel">
+        <input type="text" name="cpf" placeholder="CPF" id="cpf">
+        <input type="date" name="data" id="data">
 
-    <select id="sexo">
+    <select name="data" id="sexo">
         <option value="1">Sexo</option>
         <option value="2">Masculino</option>
         <option value="3">Femenino</option>
         <option value="4">Outro</option>
     </select>
 
-        <input type="text" placeholder="Endereço" id="endereco">
-        <input type="text" placeholder="CEP" id="cep">
+        <input type="text" name="endereco" placeholder="Endereço" id="endereco">
+        <input type="text" name="cep" placeholder="CEP" id="cep">
 
-        <input type="email" placeholder="E-mail" id="email">
-        <input type="password" placeholder="Senha" id="senha1">
-        <input type="password" placeholder="Confirme a senha" id="senha2">
+        <input type="email" name="email" placeholder="E-mail" id="email">
+        <input type="password" name="senha1" placeholder="Senha" id="senha1">
+        <input type="password" name="senha2" placeholder="Confirme a senha" id="senha2">
 
-        <input type="button" value="Cadastrar" id="cadastrar">
+        <input type="submit" value="Cadastrar" id="cadastrar">
     </div>
     </form>
 </div>

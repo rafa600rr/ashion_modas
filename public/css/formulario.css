@@ -84,7 +84,7 @@
     border-bottom: 2px solid rgba(351,13,99, 0.5);
 }
 
-.formCadastro input[type="button"]{
+.formCadastro input[type="submit"]{
     background-color: rgba(351,13,99, 0.9);
     border: none;
     border-radius: 3px;
@@ -93,7 +93,7 @@
     transition: background-color 1s;
 }
 
-.formCadastro input[type="button"]:hover{
+.formCadastro input[type="submit"]:hover{
     cursor: pointer;
     background-color: rgba(351,13,99, 0.6);
 }
