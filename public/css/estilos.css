@@ -66,16 +66,17 @@ header{
 }
 
 figure figcaption{
+    background-image: url(../imagens/circle.png);
+    background-size: cover;
     position: absolute;
     width: 20px;
     height: 20px;
     margin-top: -72px;
-    margin-left: 165px;
+    margin-left: 144px;
     padding: 1px;
     text-align: center;
     border-radius: 10px;
-    background-color: #000;
-    color: #fff;
+    font-weight: bold;
 }
 
 #pesquisa input[type="search"]{

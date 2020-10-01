@@ -1,0 +1,151 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    outline: none;
+}
+
+/* FONTES DA PAGINA */
+@font-face{
+    font-family: principal;
+    src: url(../fonts/enigma.ttf)
+}
+
+@font-face{
+    font-family: secundaria;
+    src: url(../fonts/dancingdog.ttf)
+}
+
+/* Formulário de cadastro */
+.formCadastro h1{
+    padding: 20px 0;
+    text-align: center;
+    
+}
+
+#formImg{
+    margin: 0 auto;
+}
+
+#formInput{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.formCadastro form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.formCadastro input[type="date"]{
+    width: 40%;
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    border-bottom: 2px solid rgba(351,13,99, 0.5);
+}
+
+.formCadastro select{
+    width: 42.8%;
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    border-bottom: 2px solid rgba(351,13,99, 0.5);
+}
+
+.formCadastro input[type="text"]{
+    width:40%;
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    border-bottom: 2px solid rgba(351,13,99, 0.5);
+}
+
+.formCadastro input[type="email"]{
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    border-bottom: 2px solid rgba(351,13,99, 0.5);
+}
+
+.formCadastro input[type="password"]{
+    width: 40%;
+    padding: 10px;
+    margin: 15px 0;
+    border: none;
+    border-bottom: 2px solid rgba(351,13,99, 0.5);
+}
+
+.formCadastro input[type="button"]{
+    background-color: rgba(351,13,99, 0.9);
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+    padding: 10px;
+    transition: background-color 1s;
+}
+
+.formCadastro input[type="button"]:hover{
+    cursor: pointer;
+    background-color: rgba(351,13,99, 0.6);
+}
+
+/* Formulário de login */
+.formLogin h1{
+    padding: 20px 0;
+    text-align: center;
+    
+}
+
+.formLogin{
+    margin: 0 auto;
+    width: 40%;
+}
+
+.formLogin form{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.formLogin input[type="password"],
+input[type="email"]{
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    border: none;
+    border-bottom: 2px solid rgba(351,13,99, 0.5);
+}
+
+.formLogin input[type="button"]{
+    background-color: rgba(351,13,99, 0.9);
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+    padding: 10px;
+    transition: background-color 1s;
+}
+
+.formLogin input[type="button"]:hover{
+    cursor: pointer;
+    background-color: rgba(351,13,99, 0.6);
+}
+
+.formLogin a{
+    text-decoration: none;
+    margin: 5px;
+    color:  rgba(351,13,99, 0.9);
+}
+
+.formLogin p{
+    margin: 10px;
+}
