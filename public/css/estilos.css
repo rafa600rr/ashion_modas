@@ -43,6 +43,9 @@ header{
 
 /* Menu de navegação principal */
 .menuNav{
+    position: absolute;
+    background-color: #fff;
+    margin: 1px solid grey;
     margin: 5px;
 }
 
@@ -51,10 +54,6 @@ header{
     text-decoration: none;
     padding: 4px;
     color: rgba(351,13,99, 1);
-}
-
-.menuNav a:hover{
-    border-bottom: 1px solid rgba(351,13,99, 1);
 }
 
 #pesquisa{
@@ -82,7 +81,7 @@ header{
 }
 
 figure figcaption{
-    background-image: url(../imagens/circle.png);
+    background-image: url(../img/circle.png);
     background-size: cover;
     position: absolute;
     width: 20px;
@@ -127,7 +126,7 @@ main{
 
 /* CATEGORIAS */
 #CategoriaPrimaria{
-    background-image: url(../imagens/categorias/1.jpg);
+    background-image: url(../img/categorias/1.jpg);
     background-size: cover;
     float: left;
     width: 500px;
@@ -155,7 +154,7 @@ main{
 
 #categoria_masculino{
     float: left;
-    background-image: url(../imagens/categorias/2.jpg);
+    background-image: url(../img/categorias/2.jpg);
     background-size: cover;
     width: 250px;
     height: 175px;
@@ -168,7 +167,7 @@ main{
 
 #categoria_infantil{
     float: left;
-    background-image: url(../imagens/categorias/3.jpg);
+    background-image: url(../img/categorias/3.jpg);
     background-size: cover;
     width: 250px;
     height: 175px;
@@ -181,7 +180,7 @@ main{
 
 #categoria_cosmeticos{
     float: left;
-    background-image: url(../imagens/categorias/4.jpg);
+    background-image: url(../img/categorias/4.jpg);
     background-size: cover;
     width: 250px;
     height: 175px;
@@ -195,7 +194,7 @@ main{
 
 #categoria_acessorios{
     float: left;
-    background-image: url(../imagens/categorias/5.jpg);
+    background-image: url(../img/categorias/5.jpg);
     background-size: cover;
     width: 250px;
     height: 175px;
@@ -227,49 +226,49 @@ main{
 }
 
 #prod1{
-    background-image: url(../imagens/produtos/1.jpg);
+    background-image: url(../img/produtos/1.jpg);
     width: 270px;
     height: 360px;
 }
 
 #prod2{
-    background-image: url(../imagens/produtos/2.jpg);
+    background-image: url(../img/produtos/2.jpg);
     width: 270px;
     height: 360px;
 }
 
 #prod3{
-    background-image: url(../imagens/produtos/3.jpg);
+    background-image: url(../img/produtos/3.jpg);
     width: 270px;
     height: 360px;
 }
 
 #prod4{
-    background-image: url(../imagens/produtos/4.jpg);
+    background-image: url(../img/produtos/4.jpg);
     width: 270px;
     height: 360px;
 }
 
 #prod5{
-    background-image: url(../imagens/produtos/5.jpg);
+    background-image: url(../img/produtos/5.jpg);
     width: 270px;
     height: 360px;
 }
 
 #prod6{
-    background-image: url(../imagens/produtos/6.jpg);
+    background-image: url(../img/produtos/6.jpg);
     width: 270px;
     height: 360px;
 }
 
 #prod7{
-    background-image: url(../imagens/produtos/7.jpg);
+    background-image: url(../img/produtos/7.jpg);
     width: 270px;
     height: 360px;
 }
 
 #prod8{
-    background-image: url(../imagens/produtos/8.jpg);
+    background-image: url(../img/produtos/8.jpg);
     width: 270px;
     height: 360px;
 }
