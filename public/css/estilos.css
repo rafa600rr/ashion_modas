@@ -41,6 +41,22 @@ header{
     padding-top: 20px;
 }
 
+/* Menu de navegação principal */
+.menuNav{
+    margin: 5px;
+}
+
+.menuNav a{
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 4px;
+    color: rgba(351,13,99, 1);
+}
+
+.menuNav a:hover{
+    border-bottom: 1px solid rgba(351,13,99, 1);
+}
+
 #pesquisa{
     /* float: left; */
     width: 70%;
@@ -72,7 +88,7 @@ figure figcaption{
     width: 20px;
     height: 20px;
     margin-top: -72px;
-    margin-left: 144px;
+    margin-left: 164px;
     padding: 1px;
     text-align: center;
     border-radius: 10px;

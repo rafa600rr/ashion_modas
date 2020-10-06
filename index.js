@@ -39,11 +39,36 @@ app.get('/cadastro', (req, res) =>{
     res.render('cadastro');
 });
 
-app.post('/cadastro', (req, res) =>{
-    clientes.push({"nome": require.body.nome, 
-    "sobrenome": require.body.sobreNome})
-    console.log(clientes)
-    res.render('/cadastro')
+app.post('/cadastrar', (req, res) =>{
+
+    let nome = req.body.nome;
+    let sobreNome = req.body.sobreNome;
+    let telefone = req.body.tel;
+    let cpf = req.body.cpf;
+    let data = req.body.data;
+    let sexo = req.body.sexo;
+    let endereco = req.body.endereco;
+    let cep = req.body.cep;
+    let email = req.body.email;
+    let senha = req.body.senha1;
+
+    clientes.push({'nome':nome,
+        'sobreNome':sobreNome,
+        'telefone':telefone,
+        'cpf':cpf,
+        'data':data,
+        'sexo':sexo,
+        'endereco':endereco,
+        'cep':cep,
+        'email':email,
+        'senha':senha});
+    
+    res.render('cadastro', {'cadastro':true});
+});
+
+app.get('/carrinho', (req, res) =>{
+
+    res.render('carrinho')
 })
 
 // Servidor

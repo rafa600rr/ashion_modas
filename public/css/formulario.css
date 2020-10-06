@@ -16,6 +16,15 @@
     src: url(../fonts/dancingdog.ttf)
 }
 
+/* Menssagem de alerta de cadastro */
+#divCadastro{
+    padding: 5px;
+    position: absolute;
+    color: rgb(6, 184, 6);
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
 /* Formulário de cadastro */
 .formCadastro h1{
     padding: 20px 0;

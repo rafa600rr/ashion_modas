@@ -1,5 +1,6 @@
+// Função para validar criação de usuário
 window.onload = () =>{
-    document.getElementById("cadastrar").addEventListener("click", ()=>{
+    document.getElementById("cadastrar").addEventListener("click", () =>{
         let nome = document.getElementById("nome").value;
         let sobreNome = document.getElementById("sobreNome").value;
         let tel = document.getElementById("tel").value;
@@ -19,6 +20,8 @@ window.onload = () =>{
             alert("Telefone inválido");
         }else if(cpf.length != 11){
             alert("CPF inválido");
+        }else if(endereco == ""){
+            alert("Endereço invélido");
         }else if(cep.length != 8){
             alert("CEP inválido");
         }else if((email.indexOf("@") == -1) || (email.indexOf("é") != -1) || (email.indexOf("ç") != -1) || (email.indexOf("ã") != -1) || (email.indexOf("ê") != -1)){
@@ -30,3 +33,5 @@ window.onload = () =>{
         }
     })
 }
+
+// Função para validação de login

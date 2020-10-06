@@ -1,7 +1,16 @@
-<div class="formCadastro">
-    <h1>Faça parte da nossa loja!</h1>
+{{!-- JS --}}
+<script src="script/validaForm.js"></script>
 
-    <form action="/cadastro" method="POST">
+<div id="divCadastro">
+    {{#if cadastro}}
+      <p>Cadastro efetuado com sucesso!</p>
+    {{/if}}
+</div>
+
+<div class="formCadastro">
+    <h1>Faça parte da nossa família!</h1>
+
+    <form action="/cadastrar" method="POST">
        <div id="formImg">
            <img src="imagens/register.png">
        </div>
@@ -13,7 +22,7 @@
         <input type="text" name="cpf" placeholder="CPF" id="cpf">
         <input type="date" name="data" id="data">
 
-    <select name="data" id="sexo">
+    <select name="sexo" id="sexo">
         <option value="1">Sexo</option>
         <option value="2">Masculino</option>
         <option value="3">Femenino</option>
