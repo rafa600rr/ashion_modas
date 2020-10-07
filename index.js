@@ -7,6 +7,9 @@ let handlebars = require('express-handlebars');
 // Importar Body P\rser
 let bodyParser = require('body-parser');
 
+// Importar node-fetch
+let nodeFetch = require('node-fetch');
+
 // Exportar APP'
 let app = express();
 
@@ -21,9 +24,6 @@ app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 
-// JSON de clientes
-let clientes = [];
-
 // Rotas
 app.get('/inicio', (req, res) =>{
     res.render('index');
@@ -34,11 +34,12 @@ app.get('/login', (req, res) =>{
     res.render('login');
 });
 
-// Rota CADASTRO
+// Rota de cadastro
 app.get('/cadastro', (req, res) =>{
     res.render('cadastro');
 });
 
+// Rota para enviar usuarios ao JSON externo
 app.post('/cadastrar', (req, res) =>{
 
     let nome = req.body.nome;
@@ -49,27 +50,39 @@ app.post('/cadastrar', (req, res) =>{
     let sexo = req.body.sexo;
     let endereco = req.body.endereco;
     let cep = req.body.cep;
+    let numero = req.body.numero;
+    let bairro = req.body.bairro;
     let email = req.body.email;
     let senha = req.body.senha1;
 
-    clientes.push({'nome':nome,
-        'sobreNome':sobreNome,
-        'telefone':telefone,
-        'cpf':cpf,
-        'data':data,
-        'sexo':sexo,
-        'endereco':endereco,
-        'cep':cep,
-        'email':email,
-        'senha':senha});
-    
-    res.render('cadastro', {'cadastro':true});
-});
+    let usuarios = {
+    'nome':nome,
+    'sobreNome':sobreNome,
+    'telefone':telefone,
+    'cpf':cpf,
+    'data':data,
+    'sexo':sexo,
+    'endereco':endereco,
+    'cep':cep,
+    'numero':numero,
+    'bairro':bairro,
+    'email':email,
+    'senha':senha};
 
+    nodeFetch('http://localhost:3000/usuarios', {
+        method: "POST",
+        body: JSON.stringify(usuarios),
+        headers: {'Content-Type' : 'application/json'}
+    })
+
+    .then(res.redirect('/login'))
+})
+
+// Rota para o carrinho de compras
 app.get('/carrinho', (req, res) =>{
 
     res.render('carrinho')
 })
 
 // Servidor
-app.listen(8080);
+app.listen(8081);

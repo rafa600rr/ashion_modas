@@ -1,0 +1,59 @@
+{
+  "usuarios": [
+    {
+      "nome": "Rafael",
+      "sobrenome": "Vieira",
+      "telefone": "(41) 9 9149-8092",
+      "cpf": "106.693.159-31",
+      "data": "16/01/1998",
+      "sexo": "Masculino",
+      "endereco": "Rua 2970, 180",
+      "cep": "88.330-338",
+      "email": "rafaelvieirapalmital@gmail.com",
+      "senha": "**********",
+      "id": "1"
+    },
+    {},
+    {
+      "nome": "RAFAEL",
+      "sobreNome": "VIEIRA",
+      "telefone": "41991498092",
+      "cpf": "",
+      "data": "",
+      "sexo": "1",
+      "endereco": "Rua 2970",
+      "cep": "88330338",
+      "email": "rafaelvieirapalmital@gmail.com",
+      "senha": "",
+      "id": "nsT6ATY"
+    },
+    {
+      "nome": "RAFAEL",
+      "sobreNome": "VIEIRA",
+      "telefone": "41991498092",
+      "cpf": "10669315931",
+      "data": "2020-10-14",
+      "sexo": "2",
+      "endereco": "Rua 2970",
+      "cep": "88330338",
+      "email": "rafaelvieirapalmital@gmail.com",
+      "senha": "12345678",
+      "id": "QBZC2_d"
+    },
+    {
+      "nome": "RAFAEL",
+      "sobreNome": "VIEIRA",
+      "telefone": "41991498092",
+      "cpf": "10669315931",
+      "data": "1998-01-16",
+      "sexo": "2",
+      "endereco": "Rua 2970",
+      "cep": "88330338",
+      "numero": "180",
+      "bairro": "Centro",
+      "email": "rafaelvieirapalmital@gmail.com",
+      "senha": "@R4431314v",
+      "id": "cdEyb4V"
+    }
+  ]
+}

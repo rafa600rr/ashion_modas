@@ -31,28 +31,32 @@ header{
     overflow: hidden;
 }
 
-#logo img{
-    margin-left: 15px;
-}
-
 #logo{
     /* float: left; */
     width: 15%;
     padding-top: 20px;
 }
 
+#logo img{
+    margin-left: 15px;
+}
+
 /* Menu de navegação principal */
 .menuNav{
     position: absolute;
     background-color: #fff;
-    margin: 1px solid grey;
+    border-radius: 5px;
     margin: 5px;
+}
+
+.menuNav a:hover{
+    color: #000;
 }
 
 .menuNav a{
     font-family: sans-serif;
     text-decoration: none;
-    padding: 4px;
+    padding: 10px;
     color: rgba(351,13,99, 1);
 }
 

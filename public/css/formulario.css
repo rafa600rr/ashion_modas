@@ -109,14 +109,18 @@
 
 /* Formulário de login */
 .formLogin h1{
-    padding: 20px 0;
+    margin: 0 20px;
+    background-color: rgba(351,13,99, 0.6);
     text-align: center;
     
 }
 
 .formLogin{
-    margin: 0 auto;
+    margin: 20px auto;
+    padding: 30px 0;
     width: 40%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(351,13,99, 0.3);
 }
 
 .formLogin form{
