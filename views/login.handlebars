@@ -1,15 +1,18 @@
 <div class="formLogin">
     <h1>Faça seu login</h1>
 
-    <form action="/login">
+    <form action="/admin" onsubmit="return login()">
     <div>
       <img src="img/login.png">
     </div>
 
-        <input type="email" placeholder="Email" id="email">
-        <input type="password" name="" id="pass" placeholder="Senha">
+        <input type="email" name="email" id="email" placeholder="Email">
+        <input type="password" name="senha" id="pass" placeholder="Senha">
 
-        <input type="button" value="Login">
+        <input type="submit" value="Login">
         <p><a href="/cadastro">Fazer cadastro.</a></p>
     </form>
 </div>
+
+{{!-- JS --}}
+<script src="js/validaForm.js"></script>

@@ -39,6 +39,20 @@ app.get('/cadastro', (req, res) =>{
     res.render('cadastro');
 });
 
+// Rota rafael
+// app.get('/admin', (req, res) =>{
+
+//     res.render('admin');
+// });
+
+// Rota listar usuários
+app.get('/listUsers', (req, res) =>{
+
+    nodeFetch('http://localhost:3000/usuarios', {method:"GET"})
+    .then(retorno => retorno.json())
+    .then(exibirUsers => res.render('listUsers', {users:exibirUsers}));
+})
+
 // Rota para enviar usuarios ao JSON externo
 app.post('/cadastrar', (req, res) =>{
 
@@ -54,7 +68,7 @@ app.post('/cadastrar', (req, res) =>{
     let bairro = req.body.bairro;
     let email = req.body.email;
     let senha = req.body.senha1;
-
+   
     let usuarios = {
     'nome':nome,
     'sobreNome':sobreNome,
@@ -75,13 +89,32 @@ app.post('/cadastrar', (req, res) =>{
         headers: {'Content-Type' : 'application/json'}
     })
 
-    .then(res.redirect('/login'))
-})
+    .then(res.redirect('/login'));
+});
+
+// Rota remover
+app.get('/remover/:id', (req, res) =>{
+
+    let id = req.params.id;
+
+    nodeFetch('http://localhost:3000/usuarios/'+id,{
+        method: "DELETE",
+        headers: {'Content-Type' : 'application/json'}
+    })
+
+    .then(res.redirect('/listUsers'));
+});
 
 // Rota para o carrinho de compras
 app.get('/carrinho', (req, res) =>{
 
     res.render('carrinho')
+})
+
+// Rota logar ADMIN
+app.get('/admin', (req, res) =>{
+
+        res.render('admin');
 })
 
 // Servidor

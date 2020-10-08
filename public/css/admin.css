@@ -1,0 +1,61 @@
+.admin{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.admin img{
+    width: 100px;
+}
+
+.descAdmin{
+    width: 100%;
+}
+
+.descAdmin a{
+    float: right;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgba(351,13,99, 0.9);
+    padding: 5px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.descAdmin a:hover{
+    background-color: rgba(351,13,99, 0.7);
+}
+
+.descAdmin div{
+    margin-left: 10px;
+    float: left;
+}
+
+.descAdmin p{
+    color: rgb(128, 128, 128);
+}
+
+.tabelaUsers table{
+    width: 100%;
+    margin-top: 50px;
+    border: 1px solid rgb(85, 84, 84);
+    font-size: 12px;
+}
+.tabelaUsers td{
+    color: rgb(51, 51, 51);;
+    padding: 8px 2px;
+    text-align: center;
+}
+
+.tabelaUsers a{
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: rgb(255, 0, 0);
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.tabelaUsers a:hover{
+    box-shadow: 0px 0px 5px rgb(255, 0, 0);
+}

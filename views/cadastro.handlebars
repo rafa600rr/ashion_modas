@@ -7,7 +7,7 @@
 <div class="formCadastro">
     <h1>Faça parte da nossa família!</h1>
 
-    <form action="/cadastrar" method="POST">
+    <form action="/cadastrar" method="POST" onsubmit="return cadastrarUsers()">
        <div id="formImg">
            <img src="img/register.png">
        </div>
@@ -35,7 +35,7 @@
         <input type="password" name="senha1" placeholder="Senha" id="senha1">
         <input type="password" name="senha2" placeholder="Confirme a senha" id="senha2">
 
-        <input type="submit" value="Cadastrar" id="cadastrar">
+        <input type="submit" value="Cadastrar">
     </div>
     </form>
 </div>
