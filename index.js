@@ -114,8 +114,14 @@ app.get('/carrinho', (req, res) =>{
 // Rota logar ADMIN
 app.get('/admin', (req, res) =>{
 
-        res.render('admin');
+    res.render('admin');
 })
+
+// Rota MEU PERFIL
+app.get('/meuPerfil', (req, res) =>{
+
+    res.render('meuPerfil');
+});
 
 // Servidor
 app.listen(8081);

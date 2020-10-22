@@ -7,6 +7,7 @@
         <div>
             <h1>Rafael Vieira</h1>
             <p>Administrador</p>
+            <p><a id="link" href="/meuPerfil">Meu perfil</a></p>
         </div>
 
         <a href="/listUsers">Todos os usuários</a>
@@ -25,29 +26,29 @@
                 <td>Data Nascimento</td>
                 <td>Sexo</td>
                 <td>Endereço</td>
-                <td>CEP</td>
                 <td>Número</td>
                 <td>Bairro</td>
+                <td>CEP</td>
                 <td>E-mail</td>
             </thead>
 
-            <tbody>
-              {{#each users}}  
-
-                <td>{{nome}} {{sobrenome}}</td>
+            
+              {{#each users}}
+              <tbody>
+                <td>{{nome}} {{sobreNome}}</td>
                 <td>{{telefone}}</td>
                 <td>{{cpf}}</td>
                 <td>{{data}}</td>
                 <td>{{sexoC}}</td>
                 <td>{{endereco}}</td>
-                <td>{{cep}}</td>
                 <td>{{numero}}</td>
                 <td>{{bairro}}</td>
+                <td>{{cep}}</td>
                 <td>{{email}}</td>
                 <td><a href="/remover/{{id}}">Remover</a></td>
-                
+              </tbody>
               {{/each}}  
-            </tbody>
+           
         </table>
     </section>
 

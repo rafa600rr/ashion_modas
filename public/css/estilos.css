@@ -54,7 +54,6 @@ header{
 }
 
 .menuNav a{
-    font-family: sans-serif;
     text-decoration: none;
     padding: 10px;
     color: rgba(351,13,99, 1);
@@ -84,7 +83,7 @@ header{
     margin-right: 15px;
 }
 
-figure figcaption{
+#contarIten{
     background-image: url(../img/circle.png);
     background-size: cover;
     position: absolute;

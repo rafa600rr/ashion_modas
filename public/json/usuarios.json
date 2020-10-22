@@ -1,3 +1,34 @@
 {
-  "usuarios": []
+  "usuarios": [
+    {
+      "nome": "RAFAEL",
+      "sobreNome": "VIEIRA",
+      "telefone": "41991498092",
+      "cpf": "10669315931",
+      "data": "1998-01-16",
+      "sexo": "2",
+      "endereco": "Rua 2970",
+      "cep": "88330338",
+      "numero": "180",
+      "bairro": "Centro",
+      "email": "rafaelvieirapalmital@gmail.com",
+      "senha": "@R4431314v",
+      "id": 1
+    },
+    {
+      "nome": "Francine",
+      "sobreNome": "F. Almeida",
+      "telefone": "15997848900",
+      "cpf": "54671890875",
+      "data": "2009-06-17",
+      "sexo": "3",
+      "endereco": "Rua Curt Hering",
+      "cep": "87645788",
+      "numero": "235",
+      "bairro": "Centro",
+      "email": "fran@outlook.com",
+      "senha": "123456789",
+      "id": 2
+    }
+  ]
 }

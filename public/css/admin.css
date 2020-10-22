@@ -8,6 +8,11 @@
     width: 100px;
 }
 
+#link{
+    float: left;
+    margin-top: 25px;
+}
+
 .descAdmin{
     width: 100%;
 }
@@ -58,4 +63,57 @@
 
 .tabelaUsers a:hover{
     box-shadow: 0px 0px 5px rgb(255, 0, 0);
+}
+
+.dados{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.dados h2{
+    color: rgb(80, 79, 79);
+    padding: 8px 0;
+}
+
+.dados img{
+    width: 350px;
+}
+
+.dados a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgba(351,13,99, 0.9);
+    padding: 5px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.dados a:hover{
+    background-color: rgba(351,13,99, 0.7);
+}
+
+#perfil h3{
+    font-size: 40px;
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+}
+
+.historicoCompras{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.historicoCompras img{
+    margin: 2px;
+}
+
+#figCompras{
+    text-align: center;
+}
+
+figure img{
+    width: 100px;
 }
